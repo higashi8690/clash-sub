@@ -1,0 +1,74 @@
+proxies:
+- name: 🇷🇴 RO 001 | ⬇️ 3.45MB/s
+  port: 9002
+  server: 84.239.49.154
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸 US 001 | ⬇️ 3.35MB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
+- name: 🇷🇴 RO 002 | ⬇️ 3.30MB/s
+  port: 9002
+  server: 84.239.49.239
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴 RO 003 | ⬇️ 3.28MB/s
+  port: 9002
+  server: 84.239.49.234
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴 RO 004 | ⬇️ 3.21MB/s
+  port: 9002
+  server: 84.239.49.211
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴 RO 005 | ⬇️ 3.19MB/s
+  port: 9002
+  server: 84.239.49.184
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '1000'
+  name: 🇩🇪 DE 001 | ⬇️ 0.90MB/s
+  port: 20088
+  protocol: udp
+  server: 5.83.129.153
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: '500'
+proxy-groups:
+- name: Proxy
+  type: select
+  proxies:
+  - DIRECT
+  - 🇷🇴 RO 001 | ⬇️ 3.45MB/s
+  - 🇺🇸 US 001 | ⬇️ 3.35MB/s
+  - 🇷🇴 RO 002 | ⬇️ 3.30MB/s
+  - 🇷🇴 RO 003 | ⬇️ 3.28MB/s
+  - 🇷🇴 RO 004 | ⬇️ 3.21MB/s
+  - 🇷🇴 RO 005 | ⬇️ 3.19MB/s
+  - 🇩🇪 DE 001 | ⬇️ 0.90MB/s
+rules:
+- GEOSITE,category-ads-all,REJECT
+- GEOSITE,private,DIRECT
+- GEOSITE,cn,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,Proxy
