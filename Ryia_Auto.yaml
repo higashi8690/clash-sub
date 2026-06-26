@@ -1,43 +1,35 @@
 proxies:
-- name: 🇷🇴 RO 001 | ⬇️ 3.45MB/s
+- name: 🇷🇴 RO 001 | ⬇️ 3.68MB/s
   port: 9002
-  server: 84.239.49.154
+  server: 84.239.49.187
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- multiplexing: MULTIPLEXING_LOW
-  name: 🇺🇸 US 001 | ⬇️ 3.35MB/s
-  password: dongtaiwang.com
-  port: 34567
-  server: 157.254.223.44
-  transport: TCP
-  type: mieru
-  username: dongtaiwang.com
-- name: 🇷🇴 RO 002 | ⬇️ 3.30MB/s
+- name: 🇷🇴 RO 002 | ⬇️ 3.61MB/s
   port: 9002
-  server: 84.239.49.239
+  server: 84.239.49.180
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇷🇴 RO 003 | ⬇️ 3.28MB/s
+- name: 🇷🇴 RO 003 | ⬇️ 3.47MB/s
   port: 9002
-  server: 84.239.49.234
+  server: 84.239.49.238
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇷🇴 RO 004 | ⬇️ 3.21MB/s
+- name: 🇷🇴 RO 004 | ⬇️ 3.33MB/s
   port: 9002
-  server: 84.239.49.211
+  server: 84.239.49.171
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇷🇴 RO 005 | ⬇️ 3.19MB/s
+- name: 🇷🇴 RO 005 | ⬇️ 3.32MB/s
   port: 9002
-  server: 84.239.49.184
+  server: 84.239.49.173
   skip-cert-verify: true
   tls: true
   type: http
@@ -46,7 +38,7 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: '1000'
-  name: 🇩🇪 DE 001 | ⬇️ 0.90MB/s
+  name: 🇩🇪 DE 001 | ⬇️ 0.75MB/s
   port: 20088
   protocol: udp
   server: 5.83.129.153
@@ -54,18 +46,32 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '500'
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 🇩🇪 DE 002 | ⬇️ 0.53MB/s
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 500
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - DIRECT
-  - 🇷🇴 RO 001 | ⬇️ 3.45MB/s
-  - 🇺🇸 US 001 | ⬇️ 3.35MB/s
-  - 🇷🇴 RO 002 | ⬇️ 3.30MB/s
-  - 🇷🇴 RO 003 | ⬇️ 3.28MB/s
-  - 🇷🇴 RO 004 | ⬇️ 3.21MB/s
-  - 🇷🇴 RO 005 | ⬇️ 3.19MB/s
-  - 🇩🇪 DE 001 | ⬇️ 0.90MB/s
+  - 🇷🇴 RO 001 | ⬇️ 3.68MB/s
+  - 🇷🇴 RO 002 | ⬇️ 3.61MB/s
+  - 🇷🇴 RO 003 | ⬇️ 3.47MB/s
+  - 🇷🇴 RO 004 | ⬇️ 3.33MB/s
+  - 🇷🇴 RO 005 | ⬇️ 3.32MB/s
+  - 🇩🇪 DE 001 | ⬇️ 0.75MB/s
+  - 🇩🇪 DE 002 | ⬇️ 0.53MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
