@@ -1,44 +1,77 @@
 proxies:
-- name: 🇷🇴 RO 001 | ⬇️ 3.68MB/s
-  port: 9002
-  server: 84.239.49.187
+- name: 🇸🇬 SG 001 | ⬇️ 8.44MB/s
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 13.212.34.63
   skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 002 | ⬇️ 3.61MB/s
-  port: 9002
-  server: 84.239.49.180
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 003 | ⬇️ 3.47MB/s
-  port: 9002
-  server: 84.239.49.238
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 004 | ⬇️ 3.33MB/s
+  sni: https://t.me/WangCai2🇨🇳
+  tls: false
+  type: hysteria2
+- name: 🇳🇱 NL 001 | ⬇️ 4.06MB/s
+  obfs: salamander
+  obfs-password: 2a7e8084206388f4
+  password: gdubbi2zb6gdp0c8
+  port: 443
+  server: 103.251.167.168
+  skip-cert-verify: false
+  sni: gettestin.xxee.ru
+  tls: false
+  type: hysteria2
+- name: 🇷🇴 RO 001 | ⬇️ 3.77MB/s
   port: 9002
   server: 84.239.49.171
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇷🇴 RO 005 | ⬇️ 3.32MB/s
+- name: 🇷🇴 RO 001 | ⬇️ 3.62MB/s
   port: 9002
-  server: 84.239.49.173
+  server: 84.239.49.166
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
+- name: 🇷🇴 RO 002 | ⬇️ 3.33MB/s
+  port: 9002
+  server: 84.239.14.149
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+- name: 🇷🇴 RO 003 | ⬇️ 3.24MB/s
+  port: 9002
+  server: 84.239.49.180
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸 US 001 | ⬇️ 3.20MB/s
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: vpn-us-004.fastervpn.world
+  skip-cert-verify: true
+  sni: vpn-us-004.fastervpn.world
+  type: hysteria2
+- name: 🇷🇴 RO 004 | ⬇️ 2.92MB/s
+  port: 9002
+  server: 84.239.49.187
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸 US 002 | ⬇️ 2.77MB/s
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 34.220.246.198
+  skip-cert-verify: true
+  sni: https://t.me/WangCai2🇨🇳
+  tls: false
+  type: hysteria2
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   down: '1000'
-  name: 🇩🇪 DE 001 | ⬇️ 0.75MB/s
+  name: 🇩🇪 DE 001 | ⬇️ 1.00MB/s
   port: 20088
   protocol: udp
   server: 5.83.129.153
@@ -46,32 +79,21 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '500'
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 🇩🇪 DE 002 | ⬇️ 0.53MB/s
-  port: 54177
-  protocol: udp
-  server: 5.83.129.90
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 500
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - DIRECT
-  - 🇷🇴 RO 001 | ⬇️ 3.68MB/s
-  - 🇷🇴 RO 002 | ⬇️ 3.61MB/s
-  - 🇷🇴 RO 003 | ⬇️ 3.47MB/s
-  - 🇷🇴 RO 004 | ⬇️ 3.33MB/s
-  - 🇷🇴 RO 005 | ⬇️ 3.32MB/s
-  - 🇩🇪 DE 001 | ⬇️ 0.75MB/s
-  - 🇩🇪 DE 002 | ⬇️ 0.53MB/s
+  - 🇸🇬 SG 001 | ⬇️ 8.44MB/s
+  - 🇳🇱 NL 001 | ⬇️ 4.06MB/s
+  - 🇷🇴 RO 001 | ⬇️ 3.77MB/s
+  - 🇷🇴 RO 001 | ⬇️ 3.62MB/s
+  - 🇷🇴 RO 002 | ⬇️ 3.33MB/s
+  - 🇷🇴 RO 003 | ⬇️ 3.24MB/s
+  - 🇺🇸 US 001 | ⬇️ 3.20MB/s
+  - 🇷🇴 RO 004 | ⬇️ 2.92MB/s
+  - 🇺🇸 US 002 | ⬇️ 2.77MB/s
+  - 🇩🇪 DE 001 | ⬇️ 1.00MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
