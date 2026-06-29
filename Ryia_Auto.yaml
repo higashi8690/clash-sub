@@ -1,99 +1,123 @@
 proxies:
-- name: 🇸🇬 SG 001 | ⬇️ 8.44MB/s
+- name: 🇸🇬 SG 001 | ⬇️ 31.90MB/s
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 13.212.34.63
+  server: 56.10.11.159
   skip-cert-verify: true
   sni: https://t.me/WangCai2🇨🇳
   tls: false
   type: hysteria2
-- name: 🇳🇱 NL 001 | ⬇️ 4.06MB/s
-  obfs: salamander
-  obfs-password: 2a7e8084206388f4
-  password: gdubbi2zb6gdp0c8
+- name: 🇰🇷 KR 001 | ⬇️ 17.64MB/s
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 103.251.167.168
-  skip-cert-verify: false
-  sni: gettestin.xxee.ru
+  server: 13.125.209.199
+  skip-cert-verify: true
+  sni: https://t.me/WangCai2🇨🇳
   tls: false
   type: hysteria2
-- name: 🇷🇴 RO 001 | ⬇️ 3.77MB/s
-  port: 9002
-  server: 84.239.49.171
+- name: 🇰🇷 KR 002 | ⬇️ 17.51MB/s
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.34.49.205
   skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 001 | ⬇️ 3.62MB/s
+  sni: https://t.me/WangCai2🇨🇳
+  tls: false
+  type: hysteria2
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸 US 001 | ⬇️ 14.77MB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
+- name: 🇷🇴 RO 001 | ⬇️ 12.56MB/s
   port: 9002
-  server: 84.239.49.166
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 002 | ⬇️ 3.33MB/s
-  port: 9002
-  server: 84.239.14.149
+  server: 84.239.49.184
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇴 RO 003 | ⬇️ 3.24MB/s
+- name: 🇷🇴 RO 002 | ⬇️ 12.47MB/s
   port: 9002
-  server: 84.239.49.180
+  server: 84.239.49.202
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇺🇸 US 001 | ⬇️ 3.20MB/s
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-us-004.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-us-004.fastervpn.world
-  type: hysteria2
-- name: 🇷🇴 RO 004 | ⬇️ 2.92MB/s
+- name: 🇷🇴 RO 003 | ⬇️ 12.16MB/s
   port: 9002
-  server: 84.239.49.187
+  server: 84.239.49.207
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇺🇸 US 002 | ⬇️ 2.77MB/s
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 34.220.246.198
+- name: 🇷🇴 RO 004 | ⬇️ 11.99MB/s
+  port: 9002
+  server: 193.176.84.32
   skip-cert-verify: true
-  sni: https://t.me/WangCai2🇨🇳
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '1000'
-  name: 🇩🇪 DE 001 | ⬇️ 1.00MB/s
-  port: 20088
-  protocol: udp
-  server: 5.83.129.153
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴 RO 005 | ⬇️ 11.90MB/s
+  port: 9002
+  server: 84.239.14.149
   skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '500'
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪 DE 001 | ⬇️ 5.84MB/s
+  password: ''
+  port: '1081'
+  server: 152.53.137.180
+  skip-cert-verify: true
+  type: socks5
+  username: ''
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇭🇰 HK 001 | ⬇️ 3.50MB/s
+  port: 14007
+  reality-opts:
+    public-key: wybFjQzLnkKIaaTEhwp_N9UXU8miqds9U__P971YHlU
+    short-id: 1d89ebb78c
+  server: vip.bcjdvip.com
+  servername: apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+- client-fingerprint: safari
+  flow: xtls-rprx-vision
+  name: 🇭🇰 HK 002 | ⬇️ 3.30MB/s
+  port: 14005
+  reality-opts:
+    public-key: sKWozGVep6wrIm63253QviGBtMLVrGB_W1JJHLEHi0s
+    short-id: 97a01dfaef
+  server: vip.bcjdvip.com
+  servername: apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - DIRECT
-  - 🇸🇬 SG 001 | ⬇️ 8.44MB/s
-  - 🇳🇱 NL 001 | ⬇️ 4.06MB/s
-  - 🇷🇴 RO 001 | ⬇️ 3.77MB/s
-  - 🇷🇴 RO 001 | ⬇️ 3.62MB/s
-  - 🇷🇴 RO 002 | ⬇️ 3.33MB/s
-  - 🇷🇴 RO 003 | ⬇️ 3.24MB/s
-  - 🇺🇸 US 001 | ⬇️ 3.20MB/s
-  - 🇷🇴 RO 004 | ⬇️ 2.92MB/s
-  - 🇺🇸 US 002 | ⬇️ 2.77MB/s
-  - 🇩🇪 DE 001 | ⬇️ 1.00MB/s
+  - 🇸🇬 SG 001 | ⬇️ 31.90MB/s
+  - 🇰🇷 KR 001 | ⬇️ 17.64MB/s
+  - 🇰🇷 KR 002 | ⬇️ 17.51MB/s
+  - 🇺🇸 US 001 | ⬇️ 14.77MB/s
+  - 🇷🇴 RO 001 | ⬇️ 12.56MB/s
+  - 🇷🇴 RO 002 | ⬇️ 12.47MB/s
+  - 🇷🇴 RO 003 | ⬇️ 12.16MB/s
+  - 🇷🇴 RO 004 | ⬇️ 11.99MB/s
+  - 🇷🇴 RO 005 | ⬇️ 11.90MB/s
+  - 🇩🇪 DE 001 | ⬇️ 5.84MB/s
+  - 🇭🇰 HK 001 | ⬇️ 3.50MB/s
+  - 🇭🇰 HK 002 | ⬇️ 3.30MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
