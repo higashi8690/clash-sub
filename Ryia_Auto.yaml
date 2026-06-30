@@ -1,123 +1,143 @@
 proxies:
-- name: 🇸🇬 SG 001 | ⬇️ 31.90MB/s
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 56.10.11.159
-  skip-cert-verify: true
-  sni: https://t.me/WangCai2🇨🇳
-  tls: false
-  type: hysteria2
-- name: 🇰🇷 KR 001 | ⬇️ 17.64MB/s
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 13.125.209.199
-  skip-cert-verify: true
-  sni: https://t.me/WangCai2🇨🇳
-  tls: false
-  type: hysteria2
-- name: 🇰🇷 KR 002 | ⬇️ 17.51MB/s
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 3.34.49.205
-  skip-cert-verify: true
-  sni: https://t.me/WangCai2🇨🇳
-  tls: false
-  type: hysteria2
-- multiplexing: MULTIPLEXING_LOW
-  name: 🇺🇸 US 001 | ⬇️ 14.77MB/s
-  password: dongtaiwang.com
-  port: 34567
-  server: 157.254.223.44
-  transport: TCP
-  type: mieru
-  username: dongtaiwang.com
-- name: 🇷🇴 RO 001 | ⬇️ 12.56MB/s
+- name: 🇨🇦 CA 001 | ⬇️ 8.93MB/s
+  network: ws
+  port: '8880'
+  server: 104.16.100.66
+  type: vless
+  udp: true
+  uuid: 59a0424b-d36b-4685-bac5-89d50d8969a8
+  ws-opts:
+    headers:
+      Host: billowing-snowflake-f056.63-f14.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.99 Safari/537.36
+    path: /pyip=ProxyIP.JP.CMLiussss.net
+  xudp: true
+- name: 🇨🇦 CA 002 | ⬇️ 8.24MB/s
+  network: ws
+  port: '8880'
+  server: 162.159.156.214
+  type: vless
+  udp: true
+  uuid: f5c01a38-a92a-46a1-8968-a0582f4e2f2a
+  ws-opts:
+    headers:
+      Host: steep-frost-8b18.350-c77.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /pyip=ProxyIP.US.CMLiussss.net
+  xudp: true
+- encryption: none
+  name: 🇨🇦 CA 003 | ⬇️ 7.15MB/s
+  network: ws
+  port: '8080'
+  server: 104.21.87.142
+  type: vless
+  udp: true
+  uuid: cad25dec-01c3-4c2b-8422-eedeefa9a73e
+  ws-opts:
+    headers:
+      Host: zeus-panel-2mp2ud.287et32e3o8ye78.workers.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /
+  xudp: true
+- name: 🇷🇴 RO 001 | ⬇️ 4.45MB/s
   port: 9002
-  server: 84.239.49.184
+  server: 193.176.84.37
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- alpn:
+  - h2
+  encryption: none
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+  name: 🇬🇧 GB 001 | ⬇️ 4.24MB/s
+  network: grpc
+  port: '443'
+  server: gb7.univesalsrv.com
+  servername: gb7.univesalsrv.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 810b8ba9-3232-42ac-a474-3e921fdc8845
+  xudp: true
+- name: 🇷🇴 RO 002 | ⬇️ 3.95MB/s
+  port: 9002
+  server: 193.176.84.33
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇴 RO 002 | ⬇️ 12.47MB/s
-  port: 9002
-  server: 84.239.49.202
+- name: 🇭🇰 HK 001 | ⬇️ 3.71MB/s
+  network: tcp
+  password: BxceQaOe
+  port: 11035
+  server: 43.199.35.162
   skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 003 | ⬇️ 12.16MB/s
-  port: 9002
-  server: 84.239.49.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 004 | ⬇️ 11.99MB/s
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: 🇷🇴 RO 003 | ⬇️ 3.62MB/s
   port: 9002
   server: 193.176.84.32
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇷🇴 RO 005 | ⬇️ 11.90MB/s
+- name: 🇷🇴 RO 004 | ⬇️ 3.00MB/s
   port: 9002
-  server: 84.239.14.149
+  server: 193.176.84.40
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇷🇴 RO 005 | ⬇️ 2.96MB/s
+  port: 9002
+  server: 193.176.84.31
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇩🇪 DE 001 | ⬇️ 5.84MB/s
+- name: 🇺🇸 US 001 | ⬇️ 2.79MB/s
   password: ''
-  port: '1081'
-  server: 152.53.137.180
+  port: '9002'
+  server: 156.146.59.15
   skip-cert-verify: true
-  type: socks5
+  tls: true
+  type: http
   username: ''
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇭🇰 HK 001 | ⬇️ 3.50MB/s
-  port: 14007
-  reality-opts:
-    public-key: wybFjQzLnkKIaaTEhwp_N9UXU8miqds9U__P971YHlU
-    short-id: 1d89ebb78c
-  server: vip.bcjdvip.com
-  servername: apple.com
-  skip-cert-verify: true
-  tls: true
+- name: 🇨🇦 CA 004 | ⬇️ 1.36MB/s
+  network: ws
+  port: '8880'
+  server: 104.26.13.40
   type: vless
   udp: true
-  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇭🇰 HK 002 | ⬇️ 3.30MB/s
-  port: 14005
-  reality-opts:
-    public-key: sKWozGVep6wrIm63253QviGBtMLVrGB_W1JJHLEHi0s
-    short-id: 97a01dfaef
-  server: vip.bcjdvip.com
-  servername: apple.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  uuid: 9d45d137-9892-4a83-a04a-f30b4da28243
+  ws-opts:
+    headers:
+      Host: broken-wave-8a45.483.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.111 Safari/537.36
+    path: /pyip=ProxyIP.SG.CMLiussss.net
+  xudp: true
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - DIRECT
-  - 🇸🇬 SG 001 | ⬇️ 31.90MB/s
-  - 🇰🇷 KR 001 | ⬇️ 17.64MB/s
-  - 🇰🇷 KR 002 | ⬇️ 17.51MB/s
-  - 🇺🇸 US 001 | ⬇️ 14.77MB/s
-  - 🇷🇴 RO 001 | ⬇️ 12.56MB/s
-  - 🇷🇴 RO 002 | ⬇️ 12.47MB/s
-  - 🇷🇴 RO 003 | ⬇️ 12.16MB/s
-  - 🇷🇴 RO 004 | ⬇️ 11.99MB/s
-  - 🇷🇴 RO 005 | ⬇️ 11.90MB/s
-  - 🇩🇪 DE 001 | ⬇️ 5.84MB/s
-  - 🇭🇰 HK 001 | ⬇️ 3.50MB/s
-  - 🇭🇰 HK 002 | ⬇️ 3.30MB/s
+  - 🇨🇦 CA 001 | ⬇️ 8.93MB/s
+  - 🇨🇦 CA 002 | ⬇️ 8.24MB/s
+  - 🇨🇦 CA 003 | ⬇️ 7.15MB/s
+  - 🇷🇴 RO 001 | ⬇️ 4.45MB/s
+  - 🇬🇧 GB 001 | ⬇️ 4.24MB/s
+  - 🇷🇴 RO 002 | ⬇️ 3.95MB/s
+  - 🇭🇰 HK 001 | ⬇️ 3.71MB/s
+  - 🇷🇴 RO 003 | ⬇️ 3.62MB/s
+  - 🇷🇴 RO 004 | ⬇️ 3.00MB/s
+  - 🇷🇴 RO 005 | ⬇️ 2.96MB/s
+  - 🇺🇸 US 001 | ⬇️ 2.79MB/s
+  - 🇨🇦 CA 004 | ⬇️ 1.36MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
