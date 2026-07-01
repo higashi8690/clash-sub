@@ -1,1 +1,82 @@
-proxies: []
+proxies:
+- name: 🇷🇴 RO 001 | ⬇️ 15.02MB/s
+  port: 9002
+  server: 193.176.84.40
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇷🇴 RO 001 | ⬇️ 13.36MB/s
+- name: 🇷🇴 RO 001 | ⬇️ 14.26MB/s
+port: 9002
+server: 193.176.84.37
+skip-cert-verify: true
+tls: true
+type: http
+udp: true
+- name: 🇷🇴 RO 002 | ⬇️ 13.21MB/s
+  port: 9002
+  server: 193.176.84.32
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: firefox
+encryption: none
+flow: xtls-rprx-vision
+  name: 🇹🇷 TR 001 | ⬇️ 10.90MB/s
+  name: 🇹🇷 TR 001 | ⬇️ 9.76MB/s
+network: tcp
+packet-encoding: xudp
+port: 443
+@@ -36,32 +23,38 @@ proxies:
+type: vless
+udp: true
+uuid: 870d3183-17a1-4a87-9021-e12e3ac2939f
+- name: 🇺🇸 US 001 | ⬇️ 6.76MB/s
+  password: ''
+  port: '9002'
+  server: 156.146.59.15
+- name: 🇷🇴 RO 002 | ⬇️ 9.17MB/s
+  port: 9002
+  server: 84.239.49.175
+skip-cert-verify: true
+tls: true
+type: http
+  username: ''
+- name: 🇷🇴 RO 003 | ⬇️ 0.53MB/s
+  udp: true
+- name: 🇷🇴 RO 003 | ⬇️ 8.23MB/s
+port: 9002
+  server: 84.239.49.175
+  server: 193.176.84.32
+skip-cert-verify: true
+tls: true
+type: http
+udp: true
+- name: 🇺🇸 US 001 | ⬇️ 5.77MB/s
+  password: ''
+  port: '9002'
+  server: 156.146.59.15
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: ''
+proxy-groups:
+- name: Proxy
+type: select
+proxies:
+- DIRECT
+  - 🇷🇴 RO 001 | ⬇️ 15.02MB/s
+  - 🇷🇴 RO 001 | ⬇️ 13.36MB/s
+  - 🇷🇴 RO 002 | ⬇️ 13.21MB/s
+  - 🇹🇷 TR 001 | ⬇️ 10.90MB/s
+  - 🇺🇸 US 001 | ⬇️ 6.76MB/s
+  - 🇷🇴 RO 003 | ⬇️ 0.53MB/s
+  - 🇷🇴 RO 001 | ⬇️ 14.26MB/s
+  - 🇹🇷 TR 001 | ⬇️ 9.76MB/s
+  - 🇷🇴 RO 002 | ⬇️ 9.17MB/s
+  - 🇷🇴 RO 003 | ⬇️ 8.23MB/s
+  - 🇺🇸 US 001 | ⬇️ 5.77MB/s
+rules:
+- GEOSITE,category-ads-all,REJECT
+- GEOSITE,private,DIRECT
