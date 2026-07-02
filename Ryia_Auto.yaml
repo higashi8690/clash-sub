@@ -1,5 +1,32 @@
 proxies:
-- name: 🇺🇸 US 001 | ⬇️ 4.68MB/s
+- name: 🇷🇴 RO 001 | ⬇️ 4.44MB/s
+  port: 9002
+  server: 193.176.84.32
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴 RO 001 | ⬇️ 4.41MB/s
+  port: 9002
+  server: 193.176.84.24
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇷🇴 RO 002 | ⬇️ 4.06MB/s
+  port: 9002
+  server: 193.176.84.26
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+- name: 🇷🇴 RO 003 | ⬇️ 3.80MB/s
+  port: 9002
+  server: 193.176.84.35
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+- name: 🇺🇸 US 001 | ⬇️ 2.89MB/s
   password: ''
   port: '9002'
   server: 156.146.59.15
@@ -7,36 +34,51 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇷🇴 RO 002 | ⬇️ 2.35MB/s
-  port: 9002
-  server: 193.176.84.32
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 001 | ⬇️ 1.78MB/s
+- name: 🇷🇴 RO 004 | ⬇️ 2.74MB/s
   port: 9002
   server: 193.176.84.37
   skip-cert-verify: true
+  sni: www.bing.com
   tls: true
   type: http
   udp: true
-- name: 🇷🇴 RO 002 | ⬇️ 1.21MB/s
-  port: 9002
-  server: 84.239.49.175
+- name: 🇮🇹 IT 001 | ⬇️ 2.10MB/s
+  password: ''
+  port: '1080'
+  server: 79.50.32.102
   skip-cert-verify: true
+  type: socks5
+  username: ''
+- encryption: none
+  name: 🇺🇸 US 001 | ⬇️ 0.69MB/s
+  network: ws
+  port: '443'
+  server: 170.114.46.6
+  servername: support.zoom.us.yxls.eu.cc
   tls: true
-  type: http
+  type: vless
   udp: true
+  uuid: 6680846a-8a57-4dfd-9a0e-63209cfc8535
+  ws-opts:
+    headers:
+      Host: support.zoom.us.yxls.eu.cc
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /sg-amz
+  xudp: true
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - DIRECT
-  - 🇺🇸 US 001 | ⬇️ 4.68MB/s
-  - 🇷🇴 RO 002 | ⬇️ 2.35MB/s
-  - 🇷🇴 RO 001 | ⬇️ 1.78MB/s
-  - 🇷🇴 RO 002 | ⬇️ 1.21MB/s
+  - 🇷🇴 RO 001 | ⬇️ 4.44MB/s
+  - 🇷🇴 RO 001 | ⬇️ 4.41MB/s
+  - 🇷🇴 RO 002 | ⬇️ 4.06MB/s
+  - 🇷🇴 RO 003 | ⬇️ 3.80MB/s
+  - 🇺🇸 US 001 | ⬇️ 2.89MB/s
+  - 🇷🇴 RO 004 | ⬇️ 2.74MB/s
+  - 🇮🇹 IT 001 | ⬇️ 2.10MB/s
+  - 🇺🇸 US 001 | ⬇️ 0.69MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
