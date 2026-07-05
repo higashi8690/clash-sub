@@ -8,96 +8,130 @@ proxies:
   sni: vpn-sg-003.fastervpn.world
   type: hysteria2
   udp: true
+- name: 🇺🇸 US 001 | ⬇️ 8.42MB/s
+  password: 13d29042-ab82-4195-9cd4-2bafc518e201
+  port: 52625
+  server: 147.90.235.195
+  skip-cert-verify: true
+  sni: apps.apple.com
+  type: hysteria2
+  udp: true
+- down: ''
+  fingerprint: ''
+  name: 🇳🇱 NL 001 | ⬇️ 8.02MB/s
+  obfs: ''
+  obfs-password: ''
+  password: LzMWgm6LaNWCm11bFTbynDPq2TqQj03t
+  port: '443'
+  server: 5.255.102.165
+  skip-cert-verify: true
+  sni: www.microsoft.com
+  tls: false
+  type: hysteria2
+  up: ''
 - alpn:
   - http/1.1
-  name: 🇧🇷 BR 001 | ⬇️ 16.60MB/s
+  encryption: none
+  name: 🇺🇸 US 002 | ⬇️ 2.95MB/s
   network: ws
-  password: MiTiVPN
   port: '443'
-  server: 185.133.35.22
-  skip-cert-verify: false
-  sni: Finl.App-Cloud.ir
-  type: trojan
+  server: node-8025482792-7ce993-production.up.railway.app
+  servername: node-8025482792-7ce993-production.up.railway.app
+  tls: true
+  type: vless
   udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.106 Safari/537.36
-    path: /MiTiVPN=fL
-- name: 🇷🇴 RO 001 | ⬇️ 15.14MB/s
-  port: 9002
-  server: 193.176.84.37
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 001 | ⬇️ 14.54MB/s
-  port: 9002
-  server: 193.176.84.26
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-- name: 🇷🇴 RO 002 | ⬇️ 14.16MB/s
-  port: 9002
-  server: 193.176.84.36
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 002 | ⬇️ 14.14MB/s
-  port: 9002
-  server: 193.176.84.35
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-- name: 🇷🇴 RO 003 | ⬇️ 13.35MB/s
+      Host: node-8025482792-7ce993-production.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/39.0.2171.95 Safari/537.36
+    path: /ws/DMT-NETWORK
+  xudp: true
+- name: 🇷🇴 RO 001 | ⬇️ 2.54MB/s
   port: 9002
   server: 84.239.49.239
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇹🇷 TR 001 | ⬇️ 11.44MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: W58BNG-2mtSvQYg7Id1yuW2-XqtLj0zoutETNsQuWkA
-    short-id: 45f9dc94
-  server: tr-ist-3.blook.network
-  servername: tr-ist-3.blook.network
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1a49012e-1dc4-45b7-a97c-3404bc915a66
-  xudp: true
-- name: 🇺🇸 US 001 | ⬇️ 6.81MB/s
+- name: 🇺🇸 US 003 | ⬇️ 2.06MB/s
   password: ''
   port: '9002'
-  server: 156.146.59.15
+  server: 138.199.35.217
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
+- name: 🇷🇴 RO 002 | ⬇️ 1.56MB/s
+  port: 9002
+  server: 84.239.49.234
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴 RO 003 | ⬇️ 1.42MB/s
+  port: 9002
+  server: 84.239.49.225
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: qq
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇷🇺 RU 001 | ⬇️ 0.80MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: AAZjVvbC7AwPKot_1ygO5VMpN7XYifCA7lG0RNR5sEk
+    short-id: ''
+  server: 213.219.212.30
+  servername: eh.vk.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: ed838389-e7e0-47e6-8a1b-040f06d0ba88
+  xudp: true
+- name: 🇷🇴 RO 004 | ⬇️ 0.76MB/s
+  port: 9002
+  server: 84.239.49.209
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇷🇴 RO 001 | ⬇️ 0.65MB/s
+  port: 9002
+  server: 193.176.84.35
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+- name: 🇺🇸 US 004 | ⬇️ 0.50MB/s
+  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
+  port: 8449
+  server: 45.196.182.233
+  skip-cert-verify: true
+  sni: https://t.me/WangCai2🇨🇳
+  tls: false
+  type: hysteria2
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - DIRECT
   - 🇸🇬 SG 001 | ⬇️ 30.67MB/s
-  - 🇧🇷 BR 001 | ⬇️ 16.60MB/s
-  - 🇷🇴 RO 001 | ⬇️ 15.14MB/s
-  - 🇷🇴 RO 001 | ⬇️ 14.54MB/s
-  - 🇷🇴 RO 002 | ⬇️ 14.16MB/s
-  - 🇷🇴 RO 002 | ⬇️ 14.14MB/s
-  - 🇷🇴 RO 003 | ⬇️ 13.35MB/s
-  - 🇹🇷 TR 001 | ⬇️ 11.44MB/s
-  - 🇺🇸 US 001 | ⬇️ 6.81MB/s
+  - 🇺🇸 US 001 | ⬇️ 8.42MB/s
+  - 🇳🇱 NL 001 | ⬇️ 8.02MB/s
+  - 🇺🇸 US 002 | ⬇️ 2.95MB/s
+  - 🇷🇴 RO 001 | ⬇️ 2.54MB/s
+  - 🇺🇸 US 003 | ⬇️ 2.06MB/s
+  - 🇷🇴 RO 002 | ⬇️ 1.56MB/s
+  - 🇷🇴 RO 003 | ⬇️ 1.42MB/s
+  - 🇷🇺 RU 001 | ⬇️ 0.80MB/s
+  - 🇷🇴 RO 004 | ⬇️ 0.76MB/s
+  - 🇷🇴 RO 001 | ⬇️ 0.65MB/s
+  - 🇺🇸 US 004 | ⬇️ 0.50MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
