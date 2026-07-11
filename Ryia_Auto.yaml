@@ -1,6 +1,6 @@
 proxies:
 - auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  name: 🇸🇬 SG 001 | ⬇️ 21.59MB/s
+  name: 🇸🇬 SG 001 | ⬇️ 25.53MB/s
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: vpn-sg-003.fastervpn.world
@@ -8,56 +8,14 @@ proxies:
   sni: vpn-sg-003.fastervpn.world
   type: hysteria2
   udp: true
-- alpn:
-  - http/1.1
-  name: 🇨🇦 CA 001 | ⬇️ 12.87MB/s
-  network: ws
-  password: MiTiVPN
+- cipher: aes-256-cfb
+  name: 🇯🇵 JP 001 | ⬇️ 11.47MB/s
+  password: amazonskr05
   port: '443'
-  server: 104.16.72.2
-  skip-cert-verify: true
-  sni: sww-w.MaQror.ir
-  type: trojan
+  server: 35.77.98.65
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/47.0.2526.106 Safari/537.36
-    path: /---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sw
-- name: 🇷🇴 RO 001 | ⬇️ 7.13MB/s
-  port: 9002
-  server: 84.239.49.204
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 002 | ⬇️ 6.54MB/s
-  port: 9002
-  server: 193.176.84.38
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-- alpn:
-  - http/1.1
-  encryption: none
-  name: 🇺🇸 US 001 | ⬇️ 6.39MB/s
-  network: ws
-  port: '443'
-  server: x4g-production-feb9.up.railway.app
-  servername: x4g-production-feb9.up.railway.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: deb25908-0621-646c-8ff1-d757115ba6f1
-  ws-opts:
-    headers:
-      Host: x4g-production-feb9.up.railway.app
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /ws/deb25908-0621-646c-8ff1-d757115ba6f1
-  xudp: true
-- name: 🇺🇸 US 001 | ⬇️ 5.94MB/s
+- name: 🇺🇸 US 001 | ⬇️ 6.68MB/s
   password: ''
   port: '9002'
   server: 138.199.35.217
@@ -65,42 +23,35 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇷🇴 RO 003 | ⬇️ 5.84MB/s
+- name: 🇷🇴 RO 001 | ⬇️ 6.16MB/s
   port: 9002
-  server: 84.239.49.214
+  server: 84.239.49.201
   skip-cert-verify: true
   sni: www.bing.com
   tls: true
   type: http
-- name: 🇷🇴 RO 004 | ⬇️ 5.84MB/s
+- name: 🇷🇴 RO 002 | ⬇️ 5.43MB/s
   port: 9002
-  server: 84.239.49.55
+  server: 84.239.14.157
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: true
+  type: http
+- name: 🇷🇴 RO 003 | ⬇️ 4.97MB/s
+  port: 9002
+  server: 84.239.49.57
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇷🇴 RO 005 | ⬇️ 5.75MB/s
+- name: 🇷🇴 RO 004 | ⬇️ 4.46MB/s
   port: 9002
-  server: 84.239.49.196
+  server: 84.239.14.159
   skip-cert-verify: true
+  sni: www.bing.com
   tls: true
   type: http
   udp: true
-- name: 🇺🇸 US 002 | ⬇️ 5.36MB/s
-  password: ''
-  port: '9002'
-  server: 138.199.35.220
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇩🇪 DE 001 | ⬇️ 4.23MB/s
-  password: ''
-  port: '5555'
-  server: 157.90.183.51
-  skip-cert-verify: true
-  type: socks5
-  username: ''
 - multiplexing: MULTIPLEXING_LOW
   name: 🇺🇸 US 003 | ⬇️ 3.66MB/s
   password: dongtaiwang.com
@@ -109,22 +60,13 @@ proxies:
   transport: TCP
   type: mieru
   username: dongtaiwang.com
-- client-fingerprint: qq
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇫🇷 FR 001 | ⬇️ 3.45MB/s
-  network: tcp
-  port: '2055'
-  reality-opts:
-    public-key: CWfqf06pemmlwAM8Ju1SMmnrYnAxoxMdGve0Bnu3yQ0
-    short-id: a1b2c3d4e5f6a7b8
-  server: germaan.jetstoreapp.ru
-  servername: www.icloud.com
+- name: 🇷🇴 RO 005 | ⬇️ 3.56MB/s
+  port: 9002
+  server: 84.239.49.247
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: http
   udp: true
-  uuid: 040782e7-07a7-4e15-b2a0-ea63aaac17fc
-  xudp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -137,11 +79,26 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '500'
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇮 FI 001 | ⬇️ 2.66MB/s
+  network: tcp
+  port: '40443'
+  reality-opts:
+    public-key: 6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY
+    short-id: ''
+  server: 77.221.159.165
+  servername: deepl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: ab51054f-de76-4a0f-9f3a-b44c8df86a6c
+  xudp: true
 - alpn:
   - h2
   encryption: none
   fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
-  name: 🇺🇸 US 004 | ⬇️ 3.12MB/s
+  name: 🇺🇸 US 002 | ⬇️ 0.79MB/s
   network: ws
   port: '443'
   server: 140.248.180.30
@@ -157,142 +114,23 @@ proxies:
         AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /vip1
   xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇷 FR 002 | ⬇️ 2.09MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-    short-id: 3c9c5d01c6f824dd
-  server: 155.117.137.9
-  servername: cdn6-49.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9480871a-3843-441c-9b83-aa8c5c96b209
-  xudp: true
-- name: 🇭🇰 HK 001 | ⬇️ 1.79MB/s
-  network: tcp
-  port: '11126'
-  server: 82.158.229.125
-  type: vless
-  udp: true
-  uuid: 2166fcae-8e93-4f50-d3c4-94c7042767ac
-  xudp: true
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸 US 005 | ⬇️ 1.40MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
-  port: '8449'
-  server: 45.196.182.203
-  skip-cert-verify: false
-  sni: sni.fi-m247-02.com
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸 US 006 | ⬇️ 1.24MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
-  port: '8449'
-  server: 45.196.182.174
-  skip-cert-verify: false
-  sni: sni.fi-m247-02.com
-  type: hysteria2
-  up: ''
-- name: 🇫🇮 FI 001 | ⬇️ 1.08MB/s
-  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
-  port: 8449
-  server: 66.234.150.254
-  skip-cert-verify: true
-  sni: https://t.me/WangCai2🇨🇳
-  type: hysteria2
-  udp: true
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸 US 007 | ⬇️ 1.04MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
-  port: '8449'
-  server: 45.196.182.144
-  skip-cert-verify: false
-  sni: sni.fi-m247-02.com
-  type: hysteria2
-  up: ''
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇷🇺 RU 001 | ⬇️ 0.74MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: yTFEbq95vvru8nQ7pg3DHQdIT5DXf1YdmhgfInlu-Rc
-    short-id: 0d85c502331cf509
-  server: gate2.gfyhub.cc
-  servername: rf2.gfy-x.su
-  tls: true
-  type: vless
-  udp: true
-  uuid: c2787a01-97e6-f002-a87c-e50514e2a49e
-  xudp: true
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸 US 008 | ⬇️ 0.67MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
-  port: '8449'
-  server: 45.196.182.169
-  skip-cert-verify: false
-  sni: sni.fi-m247-02.com
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸 US 009 | ⬇️ 0.52MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 03e7f55f-22f8-4564-880f-b86c8cdbf140
-  port: '8449'
-  server: 45.196.182.189
-  skip-cert-verify: false
-  sni: sni.fi-m247-02.com
-  type: hysteria2
-  up: ''
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - DIRECT
-  - 🇸🇬 SG 001 | ⬇️ 21.59MB/s
-  - 🇨🇦 CA 001 | ⬇️ 12.87MB/s
-  - 🇷🇴 RO 001 | ⬇️ 7.13MB/s
-  - 🇷🇴 RO 002 | ⬇️ 6.54MB/s
-  - 🇺🇸 US 001 | ⬇️ 6.39MB/s
-  - 🇺🇸 US 001 | ⬇️ 5.94MB/s
-  - 🇷🇴 RO 003 | ⬇️ 5.84MB/s
-  - 🇷🇴 RO 004 | ⬇️ 5.84MB/s
-  - 🇷🇴 RO 005 | ⬇️ 5.75MB/s
-  - 🇺🇸 US 002 | ⬇️ 5.36MB/s
-  - 🇩🇪 DE 001 | ⬇️ 4.23MB/s
+  - 🇸🇬 SG 001 | ⬇️ 25.53MB/s
+  - 🇯🇵 JP 001 | ⬇️ 11.47MB/s
+  - 🇺🇸 US 001 | ⬇️ 6.68MB/s
+  - 🇷🇴 RO 001 | ⬇️ 6.16MB/s
+  - 🇷🇴 RO 002 | ⬇️ 5.43MB/s
+  - 🇷🇴 RO 003 | ⬇️ 4.97MB/s
+  - 🇷🇴 RO 004 | ⬇️ 4.46MB/s
   - 🇺🇸 US 003 | ⬇️ 3.66MB/s
-  - 🇫🇷 FR 001 | ⬇️ 3.45MB/s
+  - 🇷🇴 RO 005 | ⬇️ 3.56MB/s
   - 🇩🇪 DE 002 | ⬇️ 3.31MB/s
-  - 🇺🇸 US 004 | ⬇️ 3.12MB/s
-  - 🇫🇷 FR 002 | ⬇️ 2.09MB/s
-  - 🇭🇰 HK 001 | ⬇️ 1.79MB/s
-  - 🇺🇸 US 005 | ⬇️ 1.40MB/s
-  - 🇺🇸 US 006 | ⬇️ 1.24MB/s
-  - 🇫🇮 FI 001 | ⬇️ 1.08MB/s
-  - 🇺🇸 US 007 | ⬇️ 1.04MB/s
-  - 🇷🇺 RU 001 | ⬇️ 0.74MB/s
-  - 🇺🇸 US 008 | ⬇️ 0.67MB/s
-  - 🇺🇸 US 009 | ⬇️ 0.52MB/s
+  - 🇫🇮 FI 001 | ⬇️ 2.66MB/s
+  - 🇺🇸 US 002 | ⬇️ 0.79MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
