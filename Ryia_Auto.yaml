@@ -1,18 +1,9 @@
 proxies:
-- auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  name: 🇸🇬 SG 001 | ⬇️ 9.46MB/s
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-sg-003.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-sg-003.fastervpn.world
-  type: hysteria2
-  udp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   down: '1000'
-  name: 🇩🇪 DE 001 | ⬇️ 1.66MB/s
+  name: 🇩🇪 DE 001 | ⬇️ 1.50MB/s
   port: 20088
   protocol: udp
   server: 5.83.129.153
@@ -25,8 +16,7 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - 🇸🇬 SG 001 | ⬇️ 9.46MB/s
-  - 🇩🇪 DE 001 | ⬇️ 1.66MB/s
+  - 🇩🇪 DE 001 | ⬇️ 1.50MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
