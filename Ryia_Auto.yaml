@@ -1,6 +1,6 @@
 proxies:
 - auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  name: 🇸🇬 SG 001 | ⬇️ 25.53MB/s
+  name: 🇸🇬 SG 001 | ⬇️ 9.46MB/s
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
   server: vpn-sg-003.fastervpn.world
@@ -8,70 +8,11 @@ proxies:
   sni: vpn-sg-003.fastervpn.world
   type: hysteria2
   udp: true
-- cipher: aes-256-cfb
-  name: 🇯🇵 JP 001 | ⬇️ 11.47MB/s
-  password: amazonskr05
-  port: '443'
-  server: 35.77.98.65
-  type: ss
-  udp: true
-- name: 🇺🇸 US 001 | ⬇️ 6.68MB/s
-  password: ''
-  port: '9002'
-  server: 138.199.35.217
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇷🇴 RO 001 | ⬇️ 6.16MB/s
-  port: 9002
-  server: 84.239.49.201
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-- name: 🇷🇴 RO 002 | ⬇️ 5.43MB/s
-  port: 9002
-  server: 84.239.14.157
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-- name: 🇷🇴 RO 003 | ⬇️ 4.97MB/s
-  port: 9002
-  server: 84.239.49.57
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇷🇴 RO 004 | ⬇️ 4.46MB/s
-  port: 9002
-  server: 84.239.14.159
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: true
-  type: http
-  udp: true
-- multiplexing: MULTIPLEXING_LOW
-  name: 🇺🇸 US 003 | ⬇️ 3.66MB/s
-  password: dongtaiwang.com
-  port: 34567
-  server: 157.254.223.44
-  transport: TCP
-  type: mieru
-  username: dongtaiwang.com
-- name: 🇷🇴 RO 005 | ⬇️ 3.56MB/s
-  port: 9002
-  server: 84.239.49.247
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   down: '1000'
-  name: 🇩🇪 DE 002 | ⬇️ 3.31MB/s
+  name: 🇩🇪 DE 001 | ⬇️ 1.66MB/s
   port: 20088
   protocol: udp
   server: 5.83.129.153
@@ -79,58 +20,13 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '500'
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇫🇮 FI 001 | ⬇️ 2.66MB/s
-  network: tcp
-  port: '40443'
-  reality-opts:
-    public-key: 6AOnobBShzL_N96JRBNMfbL84_3myz8ZbKfZUEqRXiY
-    short-id: ''
-  server: 77.221.159.165
-  servername: deepl.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: ab51054f-de76-4a0f-9f3a-b44c8df86a6c
-  xudp: true
-- alpn:
-  - h2
-  encryption: none
-  fingerprint: cd6e838b9bfe31cab8b3d5c858b0d6223fe84ece236c1fdb281be93c302e1e6e
-  name: 🇺🇸 US 002 | ⬇️ 0.79MB/s
-  network: ws
-  port: '443'
-  server: 140.248.180.30
-  servername: speedtest.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 86fdb625-1a7f-4784-99a6-a96b3a80fc6d
-  ws-opts:
-    headers:
-      Host: hamshahriesfahan.com
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /vip1
-  xudp: true
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - DIRECT
-  - 🇸🇬 SG 001 | ⬇️ 25.53MB/s
-  - 🇯🇵 JP 001 | ⬇️ 11.47MB/s
-  - 🇺🇸 US 001 | ⬇️ 6.68MB/s
-  - 🇷🇴 RO 001 | ⬇️ 6.16MB/s
-  - 🇷🇴 RO 002 | ⬇️ 5.43MB/s
-  - 🇷🇴 RO 003 | ⬇️ 4.97MB/s
-  - 🇷🇴 RO 004 | ⬇️ 4.46MB/s
-  - 🇺🇸 US 003 | ⬇️ 3.66MB/s
-  - 🇷🇴 RO 005 | ⬇️ 3.56MB/s
-  - 🇩🇪 DE 002 | ⬇️ 3.31MB/s
-  - 🇫🇮 FI 001 | ⬇️ 2.66MB/s
-  - 🇺🇸 US 002 | ⬇️ 0.79MB/s
+  - 🇸🇬 SG 001 | ⬇️ 9.46MB/s
+  - 🇩🇪 DE 001 | ⬇️ 1.66MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
