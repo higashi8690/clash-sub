@@ -3,7 +3,7 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: '1000'
-  name: 🇩🇪 DE 001 | ⬇️ 2.21MB/s
+  name: 🇩🇪 DE 001 | ⬇️ 2.10MB/s
   port: 20088
   protocol: udp
   server: 5.83.129.153
@@ -11,12 +11,21 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '500'
+- multiplexing: MULTIPLEXING_LOW
+  name: 🇺🇸 US 001 | ⬇️ 0.76MB/s
+  password: dongtaiwang.com
+  port: 34567
+  server: 157.254.223.44
+  transport: TCP
+  type: mieru
+  username: dongtaiwang.com
 proxy-groups:
 - name: Proxy
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 DE 001 | ⬇️ 2.21MB/s
+  - 🇩🇪 DE 001 | ⬇️ 2.10MB/s
+  - 🇺🇸 US 001 | ⬇️ 0.76MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
