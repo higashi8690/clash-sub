@@ -3,7 +3,7 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: '1000'
-  name: 🇩🇪 DE 001 | ⬇️ 1.50MB/s
+  name: 🇩🇪 DE 001 | ⬇️ 2.21MB/s
   port: 20088
   protocol: udp
   server: 5.83.129.153
@@ -16,7 +16,7 @@ proxy-groups:
   type: select
   proxies:
   - DIRECT
-  - 🇩🇪 DE 001 | ⬇️ 1.50MB/s
+  - 🇩🇪 DE 001 | ⬇️ 2.21MB/s
 rules:
 - GEOSITE,category-ads-all,REJECT
 - GEOSITE,private,DIRECT
